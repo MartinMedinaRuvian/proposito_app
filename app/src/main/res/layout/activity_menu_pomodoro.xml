@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#fff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center">
+
+                <TextView
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menu principal"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/imgmenu"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icono_yolenith"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/estado_1"/>
+
+                    <TextView
+                        android:textColor="@color/azulClaro"
+                        android:textStyle="bold"
+                        android:id="@+id/lblhoyHecho"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="hecho hoy"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/lblhecho"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total hecho"
+                        android:textSize="20dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/estado_2"/>
+
+                    <TextView
+                        android:textColor="@color/rojoClaro"
+                        android:textStyle="bold"
+                        android:id="@+id/lblhoyEnEspera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total ingreso"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/lblenEspera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total espera"
+                        android:textSize="20dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/btnadd"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="NUEVO PROPOSITO"
+                android:textSize="20dp"
+                android:background="#212121"
+                android:textColor="#fff"
+                android:padding="10dp"
+                />
+
+            <Button
+                android:id="@+id/btnver"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ver propositos"
+                android:textSize="20dp"
+                android:background="#212121"
+                android:textColor="#fff"
+                android:padding="10dp"
+                />
+
+            <Button
+                android:id="@+id/btnverDiarioRealizado"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="P diarios realizados"
+                android:textSize="20dp"
+                android:background="#212121"
+                android:textColor="#fff"
+                android:padding="10dp"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

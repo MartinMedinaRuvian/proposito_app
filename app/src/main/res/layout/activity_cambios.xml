@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cambios"
+    android:background="@color/amarilloClaro"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center">
+
+                <TextView
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mi proposito"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/imgmenu"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icono_yolenith"/>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imgestado"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/icono_yolenith"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/lbldescripcion"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+            <Button
+                android:id="@+id/btnupdate"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Realizar"
+                android:background="#fff"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:padding="10dp"/>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btncambiarFecha"
+                    android:layout_width="30dp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:background="#212121"
+                    android:text="X"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+
+
+
+                <TextView
+                    android:id="@+id/lblfecha"
+                    android:inputType="date"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="FECHA"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:layout_marginLeft="60dp"
+                    android:id="@+id/btncambiarHora"
+                    android:layout_width="30dp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:background="#212121"
+                    android:text="X"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+
+                <TextView
+                    android:id="@+id/lblhora"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="HORA"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"/>
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnupdateFechaHora"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Actualizar fecha y hora"
+                android:background="#212121"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:padding="10dp"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

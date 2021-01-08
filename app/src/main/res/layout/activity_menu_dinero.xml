@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#fff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center">
+
+                <TextView
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menu principal"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/imgmenu"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icono_yolenith"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/imgingreso"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ingreso"/>
+
+                    <TextView
+                        android:textColor="@color/azulClaro"
+                        android:textStyle="bold"
+                        android:id="@+id/lblhoyTotalIngreso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total ingreso"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/lblfijoTotalIngreso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total ingreso"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/lbltotalIngresos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total egresos"
+                        android:textSize="20dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/imgegreso"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/egreso"/>
+
+                    <TextView
+                        android:textColor="@color/rojoClaro"
+                        android:textStyle="bold"
+                        android:id="@+id/lblhoyTotalEgreso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total ingreso"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/lblfijoTotalEgreso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total ingreso"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/lbltotalEgreso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total egresos"
+                        android:textSize="20dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/utilidad"/>
+
+                <TextView
+                    android:textColor="@color/verde"
+                    android:textStyle="bold"
+                    android:id="@+id/lblhoyUtilidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total ingreso"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/lblfijoUtilidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total ingreso"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/lbltotalUtilidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total egresos"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btndineroAgregar"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Nuevo dinero"
+                android:textSize="20dp"
+                android:background="#212121"
+                android:textColor="#fff"
+                android:padding="10dp"
+                />
+
+
+<LinearLayout
+    android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btndineroVer"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="Ver dinero"
+        android:textSize="20dp"
+        android:background="#212121"
+        android:textColor="#fff"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:id="@+id/btndineroVerRealizado"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="D REALIZADO"
+        android:textSize="20dp"
+        android:background="#212121"
+        android:textColor="#fff"
+        android:padding="10dp"
+        />
+
+
+</LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

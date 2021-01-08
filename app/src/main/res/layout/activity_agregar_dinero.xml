@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".agregar"
+    android:background="@color/azulClaro"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center">
+
+                <TextView
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mi Dinero"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/imgmenu"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icono_yolenith"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/cmbtipo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                    <CheckBox
+                        android:id="@+id/chkfijo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FIJO"
+                        android:textSize="25dp"
+                        android:background="@color/azulClaro"
+                        android:textColor="#000"
+                        />
+
+
+                </LinearLayout>
+
+
+
+                <Spinner
+                    android:id="@+id/cmbtitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+            <EditText
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/txtvalor"
+                android:hint="Valor"
+                android:textSize="24dp"
+                />
+
+            <MultiAutoCompleteTextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/txtdescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descripción"
+                android:textSize="24dp"
+                android:textColor="#000"
+                />
+
+
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btncambiarFecha"
+                    android:layout_width="30dp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:background="#212121"
+                    android:text="X"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+
+                <TextView
+                    android:id="@+id/lblfecha"
+                    android:inputType="date"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="FECHA"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:layout_marginLeft="60dp"
+                    android:id="@+id/btncambiarHora"
+                    android:layout_width="30dp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:background="#212121"
+                    android:text="X"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+
+                <TextView
+                    android:id="@+id/lblhora"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="HORA"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"/>
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="30dp"
+                android:id="@+id/btnguardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:background="#212121"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

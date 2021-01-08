@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ver"
+    android:background="@color/amarilloClaro"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mi Dinero"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/imgmenu"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/icono_yolenith"/>
+
+
+        </LinearLayout>
+
+
+        <CheckBox
+            android:layout_marginTop="10dp"
+            android:id="@+id/chkhoy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solo los de hoy"
+            android:textSize="25dp"
+            android:background="#fff"
+            android:textColor="#000"
+            />
+
+        <CheckBox
+            android:layout_marginTop="10dp"
+            android:id="@+id/chkestado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresos"
+            android:textSize="25dp"
+            android:background="#fff"
+            android:textColor="#000"
+            />
+
+
+        <CheckBox
+            android:layout_marginTop="10dp"
+            android:id="@+id/chkfijo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fijo"
+            android:textSize="25dp"
+            android:background="#fff"
+            android:textColor="#000"
+            android:layout_marginBottom="30dp"
+            />
+
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="21dp"
+            android:divider="#FFF59D"
+            android:layout_marginBottom="10dp"
+            >
+
+        </ListView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

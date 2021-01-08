@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="opcionesSpinner">
+
+        <item>PERSONAL</item>
+        <item>YOLENITH</item>
+        <item>TECNICO</item>
+        <item>UFPS</item>
+        <item>MOTO</item>
+        <item>SALUD</item>
+        <item>OTRO</item>
+
+    </string-array>
+
+
+</resources>

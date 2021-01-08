@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#fff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/logo"
+                android:layout_marginTop="50dp"
+                />
+
+
+
+
+            <Button
+                android:id="@+id/btnpropositos"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Mis propositos"
+                android:textSize="20dp"
+                android:background="#212121"
+                android:textColor="#fff"
+                android:padding="10dp"
+                />
+
+            <Button
+                android:id="@+id/btndinero"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Mi dinero"
+                android:textSize="20dp"
+                android:background="#212121"
+                android:textColor="#fff"
+                android:padding="10dp"
+                />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnbackup"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Backup"
+                android:textSize="20dp"
+                android:background="#212121"
+                android:textColor="#fff"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+
+                />
+
+            <Button
+                android:layout_marginLeft="15dp"
+                android:id="@+id/btnrestaurar"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Restaurar"
+                android:textSize="20dp"
+                android:background="#212121"
+                android:textColor="#fff"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+            <TextView
+                android:layout_marginTop="100dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yolenith software ® | Martin Medina ©"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:layout_marginBottom="40dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
